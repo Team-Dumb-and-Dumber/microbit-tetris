@@ -7,7 +7,7 @@ const int mmDAT=19;  //Might end up changing these could interfere with matrix d
 const int mmCLK=16;
 const int srDAT=15;
 const int srCLK=14;
-const int buttons[6] = {13,2,11,8,1,5};
+const int buttons[6] = {11,5,13,8,1,2};
 
 const uint32_t srLatchmask = digitalPinToBitMask(srLatch);
 const uint32_t mmDATmask = digitalPinToBitMask(mmDAT);
@@ -41,7 +41,9 @@ void moveRight();
 void handleButtons();
 void rotateClk();
 void rotateAClk();
+uint32_t * framebufferPointer();
 int gameState();
 int * returnActive();
 int checkCollisionsBitmap(int xPos, int yPos, int blockType, int rotation);
+void clearLines();
 #endif

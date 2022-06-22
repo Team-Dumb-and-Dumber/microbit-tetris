@@ -104,6 +104,5 @@ void setup() {
 
 
 void loop() {
-//  mainGameLoop();
-
+  mainGameLoop();
 }
